@@ -1,0 +1,231 @@
+* {
+    margin: 0;
+}
+
+body {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url("./images/backgroundgif.gif");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#container {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+#container2 {
+    display: flex;
+    font-weight: bold;
+    color: white;
+    margin-top: 20px;
+    font-size: 30px;
+    justify-content: space-around;
+}
+
+#container3 {
+    display: none;
+    font-weight: bold;
+    color: white;
+    margin-top: 20px;
+    font-size: 30px;
+    justify-content: space-around;
+}
+
+#win {
+    font-family: 'VT323', monospace;
+    margin-top: 5%;
+    display: none;
+    width: 704px;
+    height: 480px;
+    flex-direction: column;
+    position: relative;
+    -webkit-box-shadow: 5px 5px 15px 5px #000000;
+    box-shadow: 5px 5px 15px 5px #000000;
+    font-size: 200px;
+    text-align: center;
+    align-items: center;
+    background-color: black;
+}
+
+#winText{
+    background: -webkit-linear-gradient(rgb(0, 238, 255), #ff4ad8);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin: 10% 0;
+}
+
+#gameover {
+    font-family: 'VT323', monospace;
+    margin-top: 3%;
+    display: none;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+    width: 704px;
+    height: 480px;
+    -webkit-box-shadow: 5px 5px 15px 5px #000000;
+    box-shadow: 5px 5px 15px 5px #000000;
+    font-size: 240px;
+    line-height: 75%;
+    background-color: black;
+}
+
+#gameoverText {
+    background: -webkit-linear-gradient(rgb(255, 166, 0), rgb(255, 0, 0));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+button {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    width: 200px;
+    height: 60px;
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 5px;
+    color: rgb(0, 0, 0);
+    background-color: rgb(241, 145, 0);
+    cursor: pointer;
+}
+
+#map {
+    margin-top: 5%;
+    display: flex;
+    flex-wrap: nowrap;
+    width: 704px;
+    height: 480px;
+    -webkit-box-shadow: 5px 5px 15px 5px #000000;
+    box-shadow: 5px 5px 15px 5px #000000;
+    background-image: url('./images/background2.png');
+}
+
+#boss {
+    display: none;
+    width: 128px;
+    height: 128px;
+    position: absolute;
+    background-image: url('./images/boss.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#bossBall {
+    width: 45px;
+    height: 65px;
+    position: absolute;
+    background-image: url('./images/fireballboss.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: none;
+}
+
+#bossmap {
+    margin-top: 5%;
+    display: none;
+    width: 704px;
+    height: 480px;
+    flex-direction: column;
+    position: relative;
+    background-image: url('./images/backgroundboss.png');
+    -webkit-box-shadow: 5px 5px 15px 5px #000000;
+    box-shadow: 5px 5px 15px 5px #000000;
+    overflow: hidden;
+}
+
+#score,
+#lives,
+#level,
+#bosslives {
+    font-size: 30px;
+    background-color: yellow;
+    padding: 10px 20px;
+    color: black;
+    border: 2px solid black;
+    font-family: 'VT323', monospace;
+    -webkit-box-shadow: 5px 5px 15px 5px #000000;
+    box-shadow: 2px 2px 10px 2px #000000;
+}
+
+div.row {
+    height: 50px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+div.blue {
+    width: 32px;
+    height: 32px;
+}
+
+div.red {
+    width: 32px;
+    height: 32px;
+}
+
+#cat {
+    width: 64px;
+    height: 64px;
+    position: absolute;
+    background-image: url('./images/player.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#fireball {
+    width: 30px;
+    height: 45px;
+    position: absolute;
+    background-image: url('./images/fireball.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: none;
+}
+
+#catvillan1 {
+    width: 64px;
+    height: 64px;
+    position: absolute;
+    background-image: url('./images/catvillan1.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: none;
+}
+
+#catvillan2 {
+    width: 64px;
+    height: 64px;
+    position: absolute;
+    background-image: url('./images/catvillan2.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: none;
+}
+
+#catvillan3 {
+    width: 64px;
+    height: 64px;
+    position: absolute;
+    background-image: url('./images/catvillan3.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: none;
+}
+
+#catvillan4 {
+    width: 64px;
+    height: 64px;
+    position: absolute;
+    background-image: url('./images/catvillan4.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: none;
+}
